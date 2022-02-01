@@ -1,16 +1,12 @@
-div {
-    width: 50%;
-    border: 1px solid black;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
 circle, polygon {
     fill: #fff;
-    stroke: red;
-    opacity: 0.5;
+    fill-opacity: 0.01;
     cursor: pointer;
 }
+
+#tooltip {
+    background: cornsilk;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
