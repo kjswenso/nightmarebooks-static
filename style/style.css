@@ -126,3 +126,13 @@ footer {
 p.mobile-display {
     font-size: 0.2em;
 }
+
+@media screen and (max-width: 767px) {
+    .creepy-text, .creepy-text:last-of-type {
+        line-height: 1.5em;
+    }
+
+    /* .creepy-text:last-of-type {
+        line-height: 1.5em;
+    } */
+}
