@@ -1,7 +1,90 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000;
+    font: #fff;
+}
+
+@font-face {
+	font-family: 'ghastly-panic';
+	src: url('../fonts/ghastly-panic.regular.ttf');
+}
+
+header {
+	height: 50px;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #000;
+    text-align: center;
+}
+
+li {
+	display: inline-block;
+}
+
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #fff;
+}
+
+a:hover {
+	color: #ff0000;
+}
+
+main {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.land {
+    background-color: #fff;;
+    color: #000;
+}
+
+h1 {
+    font-family: 'ghastly-panic';
+	font-size: 7em;
+	padding: 2%;
+	letter-spacing: 6px;
+	background: -webkit-linear-gradient(rgb(53, 1, 1), rgb(53, 1, 1), rgb(61, 1, 1), #f73f3f, #ff0000, #ffffff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 0;
+    margin-top: 10px;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    color: rgb(90, 88, 88);
+    font-size: 1.3em;
+}
+
+svg {
+    margin: 0 auto;
+    display: block;
+    padding-left: 10%;
+    width: 60%;
+}
+
 circle, polygon {
     fill: #fff;
     fill-opacity: 0.01;
     cursor: pointer;
+}
+
+button {
+    background-color: darkred;
+    color: #fff;
+    border-radius: 10%;
+    border-color: black;
+    padding: 5px 10px;
 }
 
 #tooltip {
@@ -10,3 +93,32 @@ circle, polygon {
     border-radius: 5px;
     padding: 5px;
   }
+
+.descrip {
+    color: #fff;
+    background-color: #000;
+    width: 60%;
+    margin: 5% auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.creepy-text {
+    font-family: 'ghastly-panic';
+    font-size: 4em;
+    letter-spacing: 0.1em;
+}
+
+.creepy-text:last-of-type {
+    font-size: 3.5em;
+    line-height: 3em;
+}
+
+footer {
+	height: 25px;
+	background-color: darkred;
+	margin-top: 3%;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}
