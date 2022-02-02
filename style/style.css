@@ -6,7 +6,7 @@ body {
 
 @font-face {
 	font-family: 'ghastly-panic';
-	src: url('../fonts/ghastly-panic.regular.ttf');
+	src: url('fonts/ghastly-panic.regular.ttf');
 }
 
 header {
