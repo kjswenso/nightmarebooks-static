@@ -18,10 +18,15 @@ header {
 	margin: 0 auto;
 	background-color: #000;
     text-align: center;
+    padding-right: 5%;
 }
 
-li {
+header li {
 	display: inline-block;
+}
+
+ul { 
+    padding-left: 0
 }
 
 a:link {
@@ -44,9 +49,42 @@ main {
 }
 
 .land {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #fff;;
+    height: auto;
     color: #000;
+    margin: 20px auto;
 }
+
+.left, .right {
+    width: 20%
+}
+
+.left li, .right li {
+ list-style-type: none;
+ padding: 15px 5px;
+ text-align: left;
+}
+
+.left li {
+   text-align: right;
+}
+
+.left img {
+    padding: 0 5px;
+}
+
+.right img {
+    padding: 0 10px;
+}
+
+.land .center {
+    width: 50%;
+}
+
 
 h1 {
     font-family: 'ghastly-panic';
@@ -67,10 +105,10 @@ h2 {
 }
 
 svg {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: block;
-    padding-left: 10%;
-    width: 60%;
+    padding-left: 5%;
+    width: 100%;
 }
 
 circle, polygon {
@@ -79,12 +117,12 @@ circle, polygon {
     cursor: pointer;
 }
 
-button {
+.button {
     background-color: darkred;
     color: #fff;
     border-radius: 10%;
     border-color: black;
-    padding: 5px 10px;
+    padding: 5px 20px;
 }
 
 #tooltip {
@@ -132,7 +170,16 @@ p.mobile-display {
         line-height: 1.5em;
     }
 
-    /* .creepy-text:last-of-type {
-        line-height: 1.5em;
-    } */
+    .land {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left li, .right li {
+        text-align: center;
+    }
 }

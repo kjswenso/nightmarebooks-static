@@ -13,24 +13,42 @@
             <ul>
                 <li><a href="#land">Home | </a></li>
 				<li><a href="#descrip">NightMares | </a></li>
-				<li><a href="">Buy Now </a></li>
+				<li><a href="https://www.amazon.com/dp/B09RWB6QGM" target="_blank">Buy Now </a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="land" id="land">
+    <main id="land">
             <h1>NightMares</h1>
             <h2>12 Short Horrible Stories</h2>
-            <button>Buy Now</button>
-            <p class="mobile-display">Click the monsters to listen to previews.</p>
-
-            <div id="tooltip" display="none" style="position: absolute; display: none;"></div>
-
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 808" preserveAspectRatio="xMidYMin">
+            <a href="https://www.amazon.com/dp/B09RWB6QGM" target="_blank" class="button">Buy Now </a>
+            
+            <section class="land">
+            <div class="left">
+                <ul>
+                    <li>
+                        <span>Chupacabra</span> <img width=30 height=30 id="chupacabraCtrl" src="images/play-btn.svg" class="sample-sound" data-sample-sound="chupacabra" data-isPlaying="false" data-title="Chupacabra"> 
+                    </li>
+                    <li>
+                        The Crescent Moon <img width="30" height="30" src="images/play-btn.svg" id="crescent-moonCtrl" class="sample-sound" data-sample-sound="crescent-moon" data-isPlaying="false" data-title="The Crescent Moon"> 
+                    </li>
+                    <li>
+                        The Deadly Dreamer <img width="30" height="30" src="images/play-btn.svg" id="deadly-dreamerCtrl" class="sample-sound" data-sample-sound="deadly-dreamer" data-isPlaying="false" data-title="The Deadly Dreamer">
+                    </li>
+                    <li>
+                        Demon of Pain <img width="30" height="30" src="images/play-btn.svg" id="demon-painCtrl" class="sample-sound" data-sample-sound="demon-pain" data-isPlaying="false" data-title="Demon of Pain">
+                    </li>
+                    <li>
+                        My Friend, The Vampire?<img width="30" height="30" src="images/play-btn.svg" id="friend-vampireCtrl"class="sample-sound" data-sample-sound="friend-vampire" data-isPlaying="false" data-title="My Friend The Vampire">
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="center">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 808" preserveAspectRatio="xMidYMin">
                 <image width="650" height="800" xlink:href="images/nightmare-books-clock.svg">
                 </image>
-                <polygon id="gargoyle" class="sample-sound" data-sample-sound="chupacabra" data-isPlaying="false" data-title="Chupacabra" points="240,175 250,160 265,160 255,130 262,120 272,115 267,110 255,100 235,110 219,90 200,73 207,55 180,38 230,36 240,43 265,63 265,85 275,95 290,95 285,65 325,65 325,95 335,95 340,80 335,57 370,30 390,28 430,28 390,55 395,70 380,90 378,110 348,105 348,150 368,150 368,110 390,135 370,165 320,175 310,195 300,175 240,175" />
+                <!-- <polygon id="gargoyle" class="sample-sound" data-sample-sound="chupacabra" data-isPlaying="false" data-title="Chupacabra" points="240,175 250,160 265,160 255,130 262,120 272,115 267,110 255,100 235,110 219,90 200,73 207,55 180,38 230,36 240,43 265,63 265,85 275,95 290,95 285,65 325,65 325,95 335,95 340,80 335,57 370,30 390,28 430,28 390,55 395,70 380,90 378,110 348,105 348,150 368,150 368,110 390,135 370,165 320,175 310,195 300,175 240,175" />
                 <circle id="clock-face" class="sample-sound" data-sample-sound="crescent-moon" data-isPlaying="false" data-title="The Crescent Moon" cx="310" cy="290" r="75" />
                 <polygon id="left-hand" class="sample-sound" data-sample-sound="deadly-dreamer" data-isPlaying="false" data-title="The Deadly Dreamer" points="90,350 100,305 110,295 150,275 175,325 180,350 135,360" />
                 <polygon id="right-hand" class="sample-sound" data-sample-sound="demon-pain" data-isPlaying="false" data-title="Demon of Pain" points="445,305 465,255 500,250 525,275 525,295 500,320" />
@@ -39,19 +57,35 @@
                 <polygon id="pendulum" class="sample-sound" data-sample-sound="night-sweats" data-isPlaying="false" data-title="Night Sweats" points="245,485 245,500 255,500 295,480 310,430 335,425 355,460 340,500 370,530 330,600 320,585 320,570 315,560 290,560 260,540 240,510" />
                 <polygon id="tongue" class="sample-sound" data-sample-sound="reality-police" data-isPlaying="false" data-title="The Reality Police" points="240,625 265,615 280,635 295,670 340,670 310,720 240,720"  />
                 <polygon id="octopus" class="sample-sound" data-sample-sound="selfish-child" data-isPlaying="false" data-title="The Selfish Child" points="430,430 468,430 480,510 525,425 535,500 555,550 560,585 540,565 525,580 505,595 505,555 430,555"  />
-                <polygon id="crab" class="sample-sound" data-sample-sound="subterraneans" data-isPlaying="false" data-title="The Subterraneans" points="435,560 500,560 500,600 550,605 590,620 600,640 590,650 580,660 570,690 560,700 480,710 460,690 440,682"  />
+                <polygon id="crab" class="sample-sound" data-sample-sound="subterraneans" data-isPlaying="false" data-title="The Subterraneans" points="435,560 500,560 500,600 550,605 590,620 600,640 590,650 580,660 570,690 560,700 480,710 460,690 440,682"  /> -->
 
-            </svg>
-            <audio src="sounds/chupacabra-sample.mp3" type="mp3" id="chupacabra"></audio>
-            <audio src="sounds/crescent-moon-sample.mp3" type="mp3" id="crescent-moon"></audio>
-            <audio src="sounds/deadly-dreamer-sample.mp3" type="mp3" id="deadly-dreamer"></audio>
-            <audio src="sounds/demon-pain-sample.mp3" type="mp3" id="demon-pain"></audio>
-            <audio src="sounds/friend-vampire-sample.mp3" type="mp3" id="friend-vampire"></audio>
-            <audio src="sounds/lighthouse-sample.mp3" type="mp3" id="lighthouse"></audio>
-            <audio src="sounds/night-sweats-sample.mp3" type="mp3" id="night-sweats"></audio>
-            <audio src="sounds/reality-police-sample.mp3" type="mp3" id="reality-police"></audio>
-            <audio src="sounds/selfish-child-sample.mp3" type="mp3" id="selfish-child"></audio>
-            <audio src="sounds/subterraneans-sample.mp3" type="mp3" id="subterraneans"></audio>
+                </svg>
+                <audio src="sounds/chupacabra-sample.mp3" type="mp3" id="chupacabra"></audio>
+                <audio src="sounds/crescent-moon-sample.mp3" type="mp3" id="crescent-moon"></audio>
+                <audio src="sounds/deadly-dreamer-sample.mp3" type="mp3" id="deadly-dreamer"></audio>
+                <audio src="sounds/demon-pain-sample.mp3" type="mp3" id="demon-pain"></audio>
+                <audio src="sounds/friend-vampire-sample.mp3" type="mp3" id="friend-vampire"></audio>
+                <audio src="sounds/lighthouse-sample.mp3" type="mp3" id="lighthouse"></audio>
+                <audio src="sounds/night-sweats-sample.mp3" type="mp3" id="night-sweats"></audio>
+                <audio src="sounds/reality-police-sample.mp3" type="mp3" id="reality-police"></audio>
+                <audio src="sounds/selfish-child-sample.mp3" type="mp3" id="selfish-child"></audio>
+                <audio src="sounds/subterraneans-sample.mp3" type="mp3" id="subterraneans"></audio>
+           </div>
+           
+            <div class="right">
+                <ul>
+                    <li>
+                        <img width="30" height="30" src="images/play-btn.svg" id="lighthouseCtrl" class="sample-sound" data-sample-sound="lighthouse" data-isPlaying="false" data-title="The Lighthouse">The Lighthouse</li>
+                    <li>
+                        <img width="30" height="30" src="images/play-btn.svg" id="night-sweatsCtrl"class="sample-sound" data-sample-sound="night-sweats" data-isPlaying="false" data-title="Night Sweats">Night Sweats</li>
+                    <li>
+                        <img width="30" height="30" src="images/play-btn.svg" id="reality-policeCtrl"class="sample-sound" data-sample-sound="reality-police" data-isPlaying="false" data-title="The Reality Police">The Reality Police</li>
+                    <li>
+                        <img width="30" height="30" src="images/play-btn.svg" id="selfish-childCtrl"class="sample-sound" data-sample-sound="selfish-child" data-isPlaying="false" data-title="The Selfish Child">The Selfish Child</li>
+                    <li>
+                        <img width="30" height="30" src="images/play-btn.svg" id="subterraneansCtrl"class="sample-sound" data-sample-sound="subterraneans" data-isPlaying="false" data-title="The Subterraneans">The Subterraneans</li>
+                </ul>
+            </div>
         </section>
 
         <section class="descrip" id="descrip">
